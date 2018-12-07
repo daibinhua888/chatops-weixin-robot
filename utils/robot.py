@@ -8,8 +8,6 @@ class ChatOpsRobot:
     _monitor_group_name = ''
     _operator = None
 
-    def getPort(self):
-        return self._web_port
 
     def init(self, operator, host, port, group_name):
         self._operator = operator

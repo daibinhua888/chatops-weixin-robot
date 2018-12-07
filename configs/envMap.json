@@ -1,0 +1,12 @@
+{
+    "dev": "dev",
+    "dev环境": "dev",
+    "开发环境": "dev",
+
+    "sit": "sit",
+    "sit环境": "sit",
+
+    "test": "test",
+    "test环境": "test",
+    "测试环境": "test"
+}

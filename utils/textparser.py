@@ -1,5 +1,14 @@
 import jieba
 
+
+def getEnvNames():
+    return list(envMap.keys())
+
+
+def getSysNames():
+    return list(sysNameMap.keys())
+
+
 def display(tags):
     for i in tags:
         print(i)
@@ -46,33 +55,14 @@ def parseChatType(tags):
 
 def getAppName(words):
     for word in words:
-        if word.lower() in sysNames:
+        if word.lower() in getSysNames():
             return sysNameMap[word]
     return '未知系统'
-
-sysNames=['sso','tms','mship']
-sysNameMap = {
-    'sso':'kxtx-sso'
-}
-
-envNames = ['测试环境', 'test环境','test', 'sit', 'sit环境']
-envMap={
-    'dev': 'dev',
-    'dev环境': 'dev',
-    '开发环境': 'dev',
-
-    'sit': 'sit',
-    'sit环境': 'sit',
-
-    'test': 'test',
-    'test环境': 'test',
-    '测试环境': 'test',
-}
 
 
 def getEnv(words):
     for word in words:
-        if word.lower() in envNames:
+        if word.lower() in getEnvNames():
             return envMap[word]
     return '未知环境'
 

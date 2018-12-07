@@ -1,0 +1,8 @@
+{
+    "jenkins_url": "http://localhost:8080",
+    "jenkins_username": "mckay",
+    "jenkins_password": "111111",
+    "web_url": "mckay.lab",
+    "web_port": 8989,
+    "monitoring_wx_chat_group_name": "SIT·¢²¼Èº"
+}
